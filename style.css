@@ -1,0 +1,53 @@
+.row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+
+.row .card {
+    max-width: 500px;
+    margin: 10px;
+    background-color: #2c2b2d;  
+    box-shadow: 0 0 10px black;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+}
+
+.row .card:hover {
+    transform: scale(1.07);
+}
+
+
+.card .img_container {
+
+    overflow: hidden;
+}
+
+.card a {
+    text-decoration: none;
+    color: #b4b3b3;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+
+}
+
+
+.text_container {
+    padding: 5px;
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    
+}
